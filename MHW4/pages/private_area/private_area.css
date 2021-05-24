@@ -1,0 +1,361 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    background-color: #EAEDED;
+}
+
+main{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #EAEDED;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #377796;
+    text-align: center;
+    color: white;
+}
+
+#logo a{
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar a{
+    cursor: pointer;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+}
+
+#navbar a:hover{
+    text-decoration: underline;
+    background-color: #326d8a;
+}
+
+#menu{
+    display: none;
+}
+
+#profile{
+    display: flex;
+    height: 50%;
+    width: 60%;
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.35);
+    background-color: white;
+}
+
+#image{
+    margin-left: 15%;
+}
+
+#image img{
+    background-color: #EAEDED;
+    border-radius: 5%;
+}
+
+#profile_data{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    overflow: hidden;
+}
+
+#profile_data span{
+    font-size: 1.4em;
+    margin-block: 8px;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 2px;
+    text-transform:initial;
+    margin: auto;
+}
+
+th,td{
+    padding: 8px;
+    width: max-content;
+}
+
+thead tr th{
+    background-color: #EAEDED;
+    border: 1px solid grey;
+    color:rgb(80, 80, 80);
+    font-weight: bold;
+}
+
+tbody tr td{
+    text-align: center;
+}
+tbody tr:nth-child(odd){
+    background-color: white;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f7f7f7;
+}
+
+#tabs{
+    display: flex;
+    justify-content:center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#tabs div{
+    width: 9%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #EAEDED;
+    cursor: pointer;
+    text-align: center;
+}
+
+#tabs div:hover{
+    background-color: #bbbbbb;
+}
+
+.red{
+    background-color: rgb(244, 67, 54) !important;
+    color: white;
+}
+
+.green{
+    background-color: rgb(4, 170, 109) !important;
+    color: white;
+}
+
+.orange{
+    background-color: rgb(255, 87, 34)!important;
+    color: white;
+}
+
+#add_section{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+#add_privato,#add_impresa{
+    background-color: white;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.35);
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+input{
+    width: 97.5%;
+    height: 28px;
+    font-size: 1em;
+}
+
+#names, #country{
+    display: flex;
+}
+
+#names input,#country input{
+    width: 95%;
+}
+
+#submit_button{
+    align-self: center;
+    margin-top: 5%;
+}
+
+input[type=submit],button{
+    height: 35px;
+    width: 300px;
+    cursor: pointer;
+    border: none;
+    color:white;
+    background-color: #377796;
+    font-size: 1.2em;
+}
+
+input[type=submit]:hover,button:hover{
+    background-color: #326d8a;
+}
+
+form span{
+    text-decoration: underline;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+input{
+    background-color: #EAEDED;
+    border: none;
+    
+}
+
+.hide{
+    display: none !important;
+}
+
+#selection{
+    display: flex;
+    justify-content: center;
+}
+
+/* Customize the label (the container) */
+.container {
+    position: relative;
+    margin-inline: 20px;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 1.4em;
+    user-select: none;
+    width: fit-content;
+  }
+  
+/* Hide the browser's default checkbox */
+.container input {
+    display: none;
+}
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #377796;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+#remove_client{
+    width: fit-content;
+    margin: auto;
+    background-color: white;
+}
+
+select{
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #EAEDED;
+}
+
+#delete_form{
+    flex-direction: row;
+}
+
+#submit_delete{
+    margin-left: 25px;
+}
+
+#submit_delete input{
+    font-size: 1em;
+    width: fit-content;
+    height: 95%;
+}
+
+.nav{
+    margin: auto;
+    width: fit-content;
+}
+
+.nav a{
+    text-decoration: none;
+    background-color: #377796;
+    color: white;
+    font-size: 1.8em;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 50%;
+}
+
+article{
+    background-color: white;
+}
+
+#procedures form input{
+    width: 60%;
+}
+
+#procedure_ids{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#procedure_ids label{
+    margin-right: 25px;
+}
+
+#modale{
+	position: fixed;
+    top: 0;
+    left: 0;
+	height: 100%;
+	width: 100%;
+	
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#modale section{
+    background-color: white;
+}
+
+button{
+    width: 100%;
+    margin-top: 25px;
+}
