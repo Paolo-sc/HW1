@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    background-color: #EAEDED;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a:hover{
+    color: rgb(218, 161, 57);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 3%;
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.35);
+}
+
+#signup{
+    width: 40%;
+}
+
+label{
+    font-size: 1.2em;
+    color:rgba(0, 0, 0, 0.65)
+}
+
+input{
+    background-color: #EAEDED;
+    height: 1.75vw;
+    width: 15vw;
+    border-radius: 5%;
+    border: none;
+}
+
+#signup input{
+    width: 26vw;
+}
+
+#remember label, #allow label{
+    display: block;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    color: black;
+    width: fit-content;
+}
+
+#remember input, #allow input{
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type=submit]{
+    margin-top: 20px;
+    background-color: #377796;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 0;
+    color: white;
+}
+
+input[type=submit]:hover{
+    background-color: #326d8a;
+}
+
+#signup_login{
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+#torna{
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+#allow label{
+    font-size: 0.8em;
+}
+
+#names, #country{
+    display: flex;
+    justify-content: space-between;
+}
+
+#names input, #country input{
+    width: 11vw;
+}
+
+#submit{
+    margin-bottom: 5%;
+}
+
+#signup_login a{
+    text-decoration: underline;
+    color:blue;
+    cursor: pointer;
+}
+
+#signup_login a:hover{
+    color: rgb(218, 161, 57);
+}
+
+.hide{
+    display: none;
+}
+
+.errornew label {
+    color: red;
+}
+
+.errornew span {
+    opacity: 1;
+    font-size: 11px;
+    color: red;
+}
+
+.errornew input {
+    border-color: red;
+}
